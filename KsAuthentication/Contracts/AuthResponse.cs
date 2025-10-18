@@ -1,8 +1,11 @@
-﻿public sealed class AuthResponse
+﻿namespace KsAuthentication.Contracts
 {
-    public string AccessToken { get; set; } = string.Empty;
+    public sealed class AuthResponse
+    {
+        public string AccessToken { get; set; } = string.Empty;
 
-    public string TokenType { get; set; } = "Bearer";
+        public string TokenType { get; set; } = "Bearer";
 
-    public DateTime ExpiresAt { get; set; }
+        public DateTime ExpiresAt { get; set; }
+    }
 }
